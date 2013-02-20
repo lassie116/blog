@@ -4,7 +4,7 @@
   <title><![CDATA[Lassie Log]]></title>
   <link href="http://lassie116.github.com/blog/atom.xml" rel="self"/>
   <link href="http://lassie116.github.com/blog/"/>
-  <updated>2013-02-21T02:31:45+09:00</updated>
+  <updated>2013-02-21T02:34:05+09:00</updated>
   <id>http://lassie116.github.com/blog/</id>
   <author>
     <name><![CDATA[lassie]]></name>
@@ -179,6 +179,9 @@
     <updated>2012-06-09T19:05:00+09:00</updated>
     <id>http://lassie116.github.com/blog/blog/2012/06/09/12b7be82</id>
     <content type="html"><![CDATA[<p>プロジェクトページなgithub pagesだったからかもしれないが、archivesの場所が/blog/blog/archivesみたいに格好悪いことになっていたので修正した。</p>
+
+<!-- more -->
+
 
 <p>source/blog/blog/archiveという謎の階層にarchives生成用のファイルができていたので、これをsource/blogに移動させて適当にgit grep archives  とかしてリンクが/blog/blog/archivesになってそうなところを修正。あと_config.yamlの中のパーマネントリンクから余計なblog/を削除。</p>
 
