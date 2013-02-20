@@ -231,122 +231,12 @@
 <p>github pagesへのOctopressの導入をツイッターでつぶやきつつ作業したので、
 それをはりつけて振り返ってみる。</p>
 
-<h2>発端</h2>
-
-<blockquote class="twitter-tweet" lang="ja"><p>記事をgitでcommitすれば勝手に更新されるブログシステムが欲しいです。あと導入が簡単で、自由度高すぎず、おしきせのそこそこなスタイルがいくつかから選べるということなし</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211329353169113089" data-datetime="2012-06-09T05:30:18+00:00">6月 9, 2012</a></blockquote>
-
-
-<h2>Octopressのインストール</h2>
-
-<blockquote class="twitter-tweet" lang="ja"><p><a href="http://t.co/hCNDy7tb" title="http://octopress.org/docs/setup/">octopress.org/docs/setup/</a> を参照しながら環境をセットアップ開始</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211333945294471169" data-datetime="2012-06-09T05:48:33+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>git やrvmはすでにはいっていたが、octopressをcloneしたところにcdしたら.rvmrcがあって1.9.2を指定している。1.9.3じゃ駄目なのかな</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211334889067393024" data-datetime="2012-06-09T05:52:18+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>1.9.3でもいいような気がするので、rvm use 1.9.2を1.9.3に編集してとりあえずcommit</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211335170073169920" data-datetime="2012-06-09T05:53:25+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>bundleもすでにはいっているので、bundle install &#8211;path vendor/bundleでgemをごそっともってくる</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211335582562004992" data-datetime="2012-06-09T05:55:03+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>rake installでいろいろ設定された</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211336133899067392" data-datetime="2012-06-09T05:57:15+00:00">6月 9, 2012</a></blockquote>
-
-
-<p>これはdefaultのclassicテーマを使うためにいろんなファイルをコピーする作業だった。後ですこし試してみたが、他のテーマをダウンロードしてきてからrake install[&#8220;テーマ名&#8221;]でそのテーマで必要とされるファイルがごそっとコピーされてテーマが切り替わる。</p>
-
-<h2>github pagesの設定</h2>
-
-<blockquote class="twitter-tweet" lang="ja"><p>githubのプロジェクトページの作りかたを調べる</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211336632387907584" data-datetime="2012-06-09T05:59:14+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>githubのアクセスがなんかみょうなのでgitの最新版をいれなおす</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211340159503970304" data-datetime="2012-06-09T06:13:15+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>てきとうにファイル一個追加してリポジトリ作ってからの、Admin-&gt;githubpageつくる、みたいなボタンをぽちっとおしたらプロジェクトページできた</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211341421112852482" data-datetime="2012-06-09T06:18:15+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>おしきせのファイルがいっぱいできたが、どうせいらなくなるだろうからごそっとrmしてpushしたら pageつくれねえよ、ってエラーメールがとんできたが気にしない</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211342017823911937" data-datetime="2012-06-09T06:20:38+00:00">6月 9, 2012</a></blockquote>
-
-
-<h2>Octopressとgithub pagesの連携</h2>
-
-<blockquote class="twitter-tweet" lang="ja"><p>ここでoctopressにもどる</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211342677579530240" data-datetime="2012-06-09T06:23:15+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>(bundle exec) rake setup_github_pages を実行するもhttpsなリポジトリ指定では駄目だった sshなほうならOK</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211344179408801792" data-datetime="2012-06-09T06:29:13+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>というわけでさっき作ったblogリポジトリを指定したら、octopressの下位ディレクトリに、blogリポジトリ用のgitワーキングディレクトリができた これっていいんだっけ submoduleなのか?</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211344392064221184" data-datetime="2012-06-09T06:30:04+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>上位のリポジトリで下位のリポジトリがまるごと無視設定されてるからいいのかな なるほどこういうやり方もあんのか</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211345738108641280" data-datetime="2012-06-09T06:35:25+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>rake generate ,rake deployしたら <a href="http://t.co/CzEWtze2" title="http://lassie116.github.com/blog/">lassie116.github.com/blog/</a> にからっぽのができたOctopressなサイトができた</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211345346461319169" data-datetime="2012-06-09T06:33:51+00:00">6月 9, 2012</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>octopress自体をmasterにしてる | そこで作業しているのは筋がわるそうなので自分octopress用のbranchを作ってそこで管理しよう</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211347422855708672" data-datetime="2012-06-09T06:42:06+00:00">6月 9, 2012</a></blockquote>
-
-
-<h2>初記事の投稿</h2>
-
-<blockquote class="twitter-tweet" lang="ja"><p>環境ととのったような気がしないでもないので初記事をかく</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211348467828785152" data-datetime="2012-06-09T06:46:16+00:00">6月 9, 2012</a></blockquote>
-
-
-<p>ここで<a href="http://lassie116.github.com/blog/2012/06/09/new-post/">この記事</a>や<a href="http://lassie116.github.com/blog/2012/06/09/">この記事</a>を書く。rake new_postでファイル生成して、markdownで文章書いて、rake generateで記事生成して、rake deployでgithubにpush。Webサイトの編集ページを開く必要もなく、いつものエディタで文書を編集した後にぽちぽちっとコマンドたたくだけで更新できるので非常に便利。</p>
-
-<blockquote class="twitter-tweet" lang="ja"><p>あーまーたしかにここまで出来てしまえば悪くない気はするね。あと記事のURL決めるのめんどいので適当なIDを勝手に生成してほしい</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211351155178082304" data-datetime="2012-06-09T06:56:56+00:00">6月 9, 2012</a></blockquote>
-
-
-<p>記事を書く前に考えないといけないことがあると書く気力がなくなるので、英文でタイトルを付ける必要をなくしたい。<a href="http://lassie116.github.com/blog/2012/06/09/f0710d21/">この記事</a>で書いたようにRakefileに仕掛けをしてnew_postで適当なタイトルを付けるようにした。</p>
-
-<h2>食わず嫌いはいけません</h2>
-
-<h4>作業前</h4>
-
-<blockquote class="twitter-tweet" lang="ja"><p>octopressは実行環境なんだか必要なリソースなんだか自分の記事なんだかがいっしょくたになってるのが非常に好みではない。</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211330035720794112" data-datetime="2012-06-09T05:33:01+00:00">6月 9, 2012</a></blockquote>
-
-
-<h4>作業後</h4>
-
-<blockquote class="twitter-tweet" lang="ja"><p>生成環境も含めてまるごとgitリポジトリにつっこんでおいて、cloneさえできればどこからでも生成できるのがいいところなのか。それでスクリプト含めて全部まるかかえしてるんだな。たいした容量でもないしこれはこれでありかそうか</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211353649887182848" data-datetime="2012-06-09T07:06:51+00:00">6月 9, 2012</a></blockquote>
-
-
-<p>この間わずか1時間半。</p>
-
-<h2>次回予告</h2>
-
-<blockquote class="twitter-tweet" lang="ja"><p>octopressは慣れてくると確かにけっこう楽しいな フレームワークが二重にかぶってる上にそれぞれのレイヤーの説明があんまりないのでわかりづらいけど</p>&mdash; らっしーさん (@lass1e) <a href="https://twitter.com/lass1e/status/211390927502184449" data-datetime="2012-06-09T09:34:59+00:00">6月 9, 2012</a></blockquote>
-
-
-<p>HTMLファイル群(=Webサイト)生成ツールであるJekyllと、それ使ってテーマ指定やgithub pagesとの連携を管理するOctopress。それぞれの役割を理解せずに、いきなりOctopressを導入しはじめると何がどうなっているのかよくわからずに混乱しやすいので、次回はこの二つのフレームワークの役割を説明する。</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/blog/2012/06/10/f5e3e13b/">Read on &rarr;</a>
+    </footer>
   
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Lassie Log]]></title>
   <link href="http://lassie116.github.com/blog/atom.xml" rel="self"/>
   <link href="http://lassie116.github.com/blog/"/>
-  <updated>2013-02-21T02:27:51+09:00</updated>
+  <updated>2013-02-21T02:31:45+09:00</updated>
   <id>http://lassie116.github.com/blog/</id>
   <author>
     <name><![CDATA[lassie]]></name>
@@ -52,6 +52,9 @@
 
 <p>github pagesへのOctopressの導入をツイッターでつぶやきつつ作業したので、
 それをはりつけて振り返ってみる。</p>
+
+<!-- more -->
+
 
 <h2>発端</h2>
 
