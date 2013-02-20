@@ -4,7 +4,7 @@
   <title><![CDATA[Lassie Log]]></title>
   <link href="http://lassie116.github.com/blog/atom.xml" rel="self"/>
   <link href="http://lassie116.github.com/blog/"/>
-  <updated>2013-02-20T20:44:36+09:00</updated>
+  <updated>2013-02-20T20:53:40+09:00</updated>
   <id>http://lassie116.github.com/blog/</id>
   <author>
     <name><![CDATA[lassie]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[環境整備完了]]></title>
+    <link href="http://lassie116.github.com/blog/blog/2013/02/20/1a000181/"/>
+    <updated>2013-02-20T20:52:00+09:00</updated>
+    <id>http://lassie116.github.com/blog/blog/2013/02/20/1a000181</id>
+    <content type="html"><![CDATA[<p>デザインと管理方法を一新した。</p>
+
+<p>これでかなり書きやすくなってるはず。機能はおいおい追加していく予定。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[やらかした]]></title>
